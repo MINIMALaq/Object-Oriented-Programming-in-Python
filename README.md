@@ -208,7 +208,7 @@ print(Employee2.fullname(emp6))
 
 *******************************************************
 *******************************************************
-oop2
+[oop2](https://github.com/MINIMALaq/Object-Oriented-Programming-in-Python/blob/master/oop02%20(class%20variables).py)
 
 class variables
 
