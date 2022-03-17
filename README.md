@@ -1,4 +1,4 @@
-oop1(object oriented programming)
+[oop1(object oriented programming)](/oop01 (classes and objects).py)
 
 there are 3 styles in programming.
 
