@@ -1,4 +1,4 @@
-[oop1(object oriented programming)](/oop01 (classes and objects).py)
+[oop1(object oriented programming)](https://github.com/MINIMALaq/Object-Oriented-Programming-in-Python/blob/master/oop01%20(classes%20and%20objects).py)
 
 there are 3 styles in programming.
 
