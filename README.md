@@ -2248,7 +2248,9 @@ so it is an example of operator overloading.
 
 *******************************************************
 *******************************************************
-[oop11](https://github.com/MINIMALaq/Object-Oriented-Programming-in-Python/blob/master/oop11%20(abstraction%20in%20python).py) **Abstraction in python**
+[oop11](https://github.com/MINIMALaq/Object-Oriented-Programming-in-Python/blob/master/oop11%20(abstraction%20in%20python).py) 
+
+**Abstraction in python**
 
 It is one of the main principles in oop.
 
@@ -2453,11 +2455,13 @@ For example, in the previous example our Mechanic2 class must have 2 methods whi
 
 *******************************************************
 *******************************************************
-inner class
+[oop12](https://github.com/MINIMALaq/Object-Oriented-Programming-in-Python/blob/master/oop12%20(Inner%20class).py)
 
-we have seen that a class can contain variables and methods.
+**inner class**
 
-but can a class contain another class?
+We have seen that a class can contain variables and methods.
+
+But can a class contain another class?
 
 Interestingly, yes.
 
@@ -2488,7 +2492,7 @@ class Student:
 
     # but the problem is when we talk about laptop,
 
-    # it has different properties and configaration.
+    # it has different properties and configuration.
 
     # we can add those properties one by one as an attribute but that isn't great.
 
@@ -2510,7 +2514,7 @@ class Student:
 
     # to create the object of the inner laptop class in the outer class, we can do that in the __init__ method.
 
-    # or we can directly create an object of Laptop class outside of the outer class.
+    # or we can directly create an object of the Laptop class outside of the outer class.
 
 s1=Student("Shawki",5130)
 
@@ -2519,7 +2523,7 @@ s2=Student("Arko",5162)
 s1.show()
 
 ```
-creating Laptop object for students. 
+Creating Laptop objects for students. 
 
 ```Python
 s1.lap=s1.Laptop("Lenovo","i5",4)
@@ -2547,13 +2551,13 @@ print()
 s1.lap.show()
 
 ```
-NOTE: it is not simmilar to inheritance.
+NOTE: it is not similar to inheritance.
 
-it can reduce potential name conflicts because it allows for a simmilarly named class to exists in another context.
+It can reduce potential name conflicts because it allows for a similarly named class to exist in another context.
 
-another advantage is that it allows for a more advanced form of inheritance
+Another advantage is that it allows for a more advanced form of inheritance
 
-in which a subclass of the outerclass can override the defination of its inner class.
+in which a subclass of the outer class can override the definition of its inner class.
 
 
 *******************************************************
