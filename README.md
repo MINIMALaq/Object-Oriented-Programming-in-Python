@@ -1465,9 +1465,9 @@ or we can google it.
 
 *******************************************************
 *******************************************************
-opp7
+[oop7](https://github.com/MINIMALaq/Object-Oriented-Programming-in-Python/blob/master/oop07%20(%40property%20decorator).py)
 
-property decorator
+**property decorator**
 
 property decorator allows us to give our class attributes getter,setter and a deleter functionality.
 
@@ -1497,9 +1497,9 @@ print(emp_1.email)
 print(emp_1.fullname())
 
 ```
-here we have printed what we have expected.
+Here we have printed what we have expected.
 
-now we are going to update our first name and again do the same actions.
+Now we are going to update our first name and again do the same actions.
 
 ```Python
 emp_1.first="jim"
@@ -1511,13 +1511,13 @@ print(emp_1.email)
 print(emp_1.fullname())
 
 ```
-but it prints the previous email which we haven't expected.
+but it prints the previous email which we hadn't expected.
 
-now what should we do in this situation?
+Now what should we do in this situation?
 
-here property decorator is useful.
+This property decorator is useful.
 
-it allows us to define a method that we can access it like an attribute.
+It allows us to define a method that we can access like an attribute.
 
 ```Python
 class Employee2:
@@ -1534,7 +1534,7 @@ class Employee2:
 
         return f"{self.first} {self.last}"
 
-    def email(self):# so right now this method is simmilar to fullname method.so each time we ran it it will access the current first and last name.
+    def email(self):# so right now this method is similar to fullname method.so each time we run it it will access the current first and last name.
 
         return f"{self.first}{self.last}.@gmail.com"
 
@@ -1549,9 +1549,9 @@ print(emp_2.email())# but now as email is a method so we need to use brackets.
 print(emp_2.fullname())
 
 ```
-so if anyone is using our class they have to change their code also.
+So if anyone is using our class they have to change their code also.
 
-but we dont want to do that.
+But we don't want to do that.
 
 ```Python
 class Employee3:
@@ -1570,7 +1570,7 @@ class Employee3:
 
         return f"{self.first} {self.last}"
 
-    @property   # it is a property decorator.it is defining the email method of our class like a attribute. 
+    @property   # it is a property decorator.it is defining the email method of our class like an attribute. 
 
     def email(self):
 
@@ -1587,11 +1587,11 @@ print(emp_3.email)
 print(emp_3.fullname)
 
 ```
-so in order to accessing email like an attribute.
+so in order to access email like an attribute.
 
 we can just add a property decorator above that method.
 
-we can do this fullname as well.
+We can do this fullname as well.
 
 ```Python
 class Employee4:
@@ -1637,23 +1637,23 @@ print(emp_4.email)
 print(emp_4.fullname)
 
 ```
-here we change our fullname.
+Here we change our fullname.
 
-lets say we wanted to change our first, last, email by changing our fullname.
+Let's say we wanted to change our first, last, email by changing our fullname.
 
 if we just change this property decorator without doing any additional code it will give us an error 
 
-in order to do that error-free, we are going to use a setter.
+In order to do that error-free, we are going to use a setter.
 
-it is another decorator.
+It is another decorator.
 
-the name we are going to use for our setter is going to be the name of the property. 
+The name we are going to use for our setter is going to be the name of the property. 
 
 we can also make a deleter in the same way.
 
 if we want to delete the fullname of our employee we have to run some clean up code. so to do this,
 
-we are going to do the same action as setter but instead of setter it will going to be deleter.
+We are going to do the same action as setter but instead of setter it will be deleter.
 
 ```Python
 class Employee5:
@@ -1709,27 +1709,26 @@ print(emp_5.email)
 print(emp_5.fullname)
 
 ```
-deleter code is useful if we want delete an attribute.
+deleter code is useful if we want to delete an attribute.
 
 ```Python
 del emp_5.fullname
 
 ```
-when we run this code it set our first and last attribute to none value.
+When we run this code it sets our first and last attribute to none value.
 
-property decorator are also use to make an attribute read-only.
+property decorator is also used to make an attribute read-only.
 
-if we there is a method in the class with the same name of an attribute,
+If we there is a method in the class with the same name of an attribute,
 
-then if we use property decorator and run that, the function will be executed not the attribute.
-
-so the attribute become an read_only attribute. 
+Then if we use the property decorator and run that, the function will be executed not the attribute.
+So the attribute becomes an read_only attribute. 
 
 *******************************************************
 *******************************************************
-oop_extra 8
+[oop_extra 8](https://github.com/MINIMALaq/Object-Oriented-Programming-in-Python/blob/master/oop08%20(combining%20multiple%20classes).py)
 
-combining multiple classes and object.
+**combining multiple classes and objects**
 
 ```Python
 class Robot :
@@ -1764,11 +1763,11 @@ class Person :
 
         self.isSitting=isSitting
 
-    def sit_down(self):# when we run this method to any object the is sitting value will be true.
+    def sit_down(self):# when we run this method to any object the isSitting value will be true.
 
         self.isSitting=True
 
-    def stand_up(self):# when we run this method to any object the is sitting value will be false.
+    def stand_up(self):# when we run this method to any object the isSitting value will be false.
 
         self.isSitting=False
 
@@ -1785,7 +1784,7 @@ p1.robotOwened=r2
 p2.robotOwened=r1
 
 ```
-now we can access this robotOwned atrribute in p1/p2 object.
+Now we can access this robotOwned attribute in the p1/p2 object.
 
 ```Python
 print(p1.robotOwened.introduce_self())
@@ -1795,7 +1794,8 @@ print(p2.robotOwened.introduce_self())
 
 *******************************************************
 *******************************************************
-Tip 1
+[oop9](https://github.com/MINIMALaq/Object-Oriented-Programming-in-Python/blob/master/oop09%20(5%20important%20tips%20and%20tricks%20for%20oop).py)
+**Tip 1**
 
 multiple inheritance
 
@@ -1813,7 +1813,7 @@ class B:
         print(" I am from class B")
 
 ```
-we can create a subclass and inherit from multiple parentclass too.
+we can create a subclass and inherit from multiple parent class too.
 
 ```Python
 class C(A,B):
@@ -1821,7 +1821,7 @@ class C(A,B):
     pass
 
 ```
-now if we create a object of C class and apply the intro function to it.
+now if we create an object of C class and apply the intro function to it.
 
 ```Python
 object_C=C()
@@ -1829,9 +1829,9 @@ object_C=C()
 object_C.intro()
 
 ```
-we can see that it is executing the class A intro() function.
+We can see that it is executing the class A intro() function.
 
-python always follow a order for execution of differnt functions.
+Python always follows an order for execution of different functions.
 
 we can see the order by mro() function.
 
@@ -1843,17 +1843,18 @@ we can see that the order is
 
 <class '__main__.C'>, <class '__main__.A'>, <class '__main__.B'>, <class 'object'>]
 
-so it first search C, then A, then B and after that object.
+So it first searches C, then A, then B and after that object.
 
-what is MRO?
+What is MRO?
 
 Method Resolution Order (MRO) is the order in which Python looks for a method in a hierarchy of classes.
 
-Especially it plays vital role in the context of multiple inheritance as single method may be found in multiple super classes.
+It plays a vital role in the context of multiple inheritance as a single method may be found in multiple super classes.
 
-super() method
+**Tip 2**
+**super() method**
 
-we have already seen a use case of super() method. we have use this to inherit the constructor from the parent class.
+We have already seen a use case of super() method. We have used this to inherit the constructor from the parent class.
 
 actually, super() is used in the subclass for calling a function which is situated in the parent class.
 
@@ -1877,19 +1878,19 @@ object_H=H()
 object_H.num()
 
 ```
-NOTE: in the previous example of super() method we have changed the functionality of a method of parent class in the child class.
+NOTE: In the previous example of super() method we have changed the functionality of a method of parent class in the child class.
 
-in programming, this is called "Method Over-riding" simmilar to the operator overloading.
+In programming, this is called "Method Overriding" similar to the operator overloading.
 
-tip 3
+**Tip 3**
 
-operator overloading
+**operator overloading**
 
-we see how differnt operators work in python. they are nothing but dunder methods.
+We see how different operators work in python. They are nothing but dunder methods.
 
-we can actually change the characteristics in python.
+We can actually change the characteristics in python.
 
-it is called operator overloading.
+It is called operator overloading.
 
 ```Python
 class Myoperats:
@@ -1909,27 +1910,27 @@ num2=Myoperats(12)
 print(num1+num2)
 
 ```
-here we have change what our + operator actually does.
+here we have changed what our + operator actually does.
 
-tip 4
+**tip 4**
 
-object life cycle
+**object life cycle**
 
-object have three periods in their life in the memory.
+objects have three periods in their life in the memory.
 
-they are Creation, Manipulation and Destruction.
+They are Creation, Manipulation and Destruction.
 
-when we create a object by a class, __new__ and __init__ method start working.
+when we create an object by a class, __new__ and __init__ method start working.
 
-and other part of the code can use the object and manipulate it.
+and other parts of the code can use the object and manipulate it.
 
-we can destroy the object after we used it. this is called "garbage collection".
+we can destroy the object after we use it. This is called "garbage collection".
 
-when "garbage collection" is  done the memory that the object used become free and we can use it for another reason.
+When "garbage collection" is  done the memory that the object used becomes free and we can use it for another reason.
 
-python automatically done the "garbage collection" after we use the object.
+Python automatically does the "garbage collection" after we use the object.
 
-so we can now make an ideal defination of "garbage collection"
+so we can now make an ideal definition of "garbage collection"
 
 The process by which Python periodically frees and reclaims blocks of memory 
 
@@ -1939,13 +1940,13 @@ python's garbage collector runs during program execution and is triggered
 
 when an object's reference count reaches zero.
 
-what is reference count?
+What is reference count?
 
-when we code, an onject can be linked with multiple objects.
+When we code, an object can be linked with multiple objects.
 
-the number of objects that an object is linked is called its reference count.
+The number of objects that an object is linked to is called its reference count.
 
-lets see an example.
+let's see an example.
 
 ```Python
 a=42 # a is linked to 42. so its reference count is 1
@@ -1957,7 +1958,7 @@ c=[1,2,3]
 c[0]=a # a is linked to c. so its reference count is 3
 
 ```
-now we can manually decrase the reference count by del method.
+Now we can manually decrease the reference count by the `del` method.
 
 ```Python
 del a # a is not linked to 42. so its reference count is 2
@@ -1967,43 +1968,43 @@ b=98 # a is not linked to b. so its reference count is 1
 c[0]=54 # a is not linked to c. so its reference count is 0
 
 ```
-when a reference count become 0. it no longer any use for us. So, python delete the object a from the memory. 
+When a reference count becomes 0. It is no longer of any use for us. So, python deletes the object a from the memory. 
 
 that is what "garbage collection is"
 
-tip 5
+**Tip 5**
 
-data hiding
+**data hiding**
 
 oop has 4 important concepts
 
-they are encapsulation, inheritance, polymorphism, and abstraction.
+They are encapsulation, inheritance, polymorphism, and abstraction.
 
-encapsulation means a technic where we combine some variables and functions and express them as a single unit.
+Encapsulation means a technique where we combine some variables and functions and express them as a single unit.
 
-this concepts makes a barrier between the variables of different classes.
+This concept makes a barrier between the variables of different classes.
 
-we can only grab the variables by excuting some functions of the same class.
+We can only grab the variables by executing some functions of the same class.
 
-this is called "data hiding".
+This is called "data hiding".
 
-in other words, data hiding means hiding the implimentation details of a class.
+In other words, data hiding means hiding the implementation details of a class.
 
-in other programming language, we can use keywords(access modifiers) to make class attribute and methods private or protected.
+In other programming languages, we can use keywords(access modifiers) to make class attributes and methods private or protected.
 
-but in python, things are little different. they said, we are all consenting adults here.
+But in python, things are a little different. they said, we are all consenting adults here.
 
-it means it is not advisable to keep any class's element protected from outside's access.
+It means it is not advisable to keep any class's element protected from outside's access.
 
-so python dont have any real method for data hiding.
+So python doesn't have any real method for data hiding.
 
-instead of that, python advise not to access important implementation details from outside.
+Instead of that, python advises not to access important implementation details from outside.
 
-weakly private
+**weakly private (protected)**
 
-when we use underscore(_) before an attribute or methods name, we are saying that they are weakly private.
+When we use underscore(_) before an attribute or method name, we are saying that they are weakly private.
 
-we can use them outside of our class but we should not access them outside of our class.
+We can use them outside of our class but we should not access them outside of our class.
 
 ```Python
 class Mlist:
@@ -2027,7 +2028,7 @@ l1.add(7,8,9)
 l1._show()
 
 ```
-note that: if we import a module having weakly private attributes and methods, then they are not imported.
+Note that: If we import a module having weakly private attributes and methods, then they are not imported.
 
 even if we use from module_name import * 
 
@@ -2035,13 +2036,13 @@ so they remain private.
 
 strongly private
 
-when we use double underscore(__) before an attribute or methods name, we are saying that they are strongly private.
+when we use double underscore`__` before an attribute or method name, we are saying that they are strongly private.
 
-python change their name little bit. so we cant access them from the outside.
+Python changed their name a little bit. so we cant access them from the outside.
 
-mainly, it doesn't done for resisting the access.
+Mainly, it isn't done for resisting the access.
 
-it is done for if we have any other attribute in the subclass with the same name, so that it wont confilct with that.
+it is done for if we have any other attribute in the subclass with the same name, so that it won't conflict with that.
 
 ```Python
 class Make:
@@ -2059,25 +2060,26 @@ a.print_num()
 ```
 print(a.__cake)
 
-we cant run this line. it would say that, Make has no attribute __cake.
+We can't run this line. it would say that Make has no attribute __cake.
 
-but we can still access the attribute like this. _classname__attributename
+But we can still access the attribute like this. _classname__attributename
 
 ```Python
 print(a._Make__cake)
 
 ```
-actually, python make the change to its name.
+Actually, python made the change to its name.
 
-why is encapsulation and data hiding important?
+Why is encapsulation and data hiding important?
 
-it is important because it gives one programmer freedom to omplement the details of the component,
+it is important because it gives one programmer freedom to implement the details of the component,
 
-without concern that other programmer will be writing code that intricately depends on those internal decisions.
+Without concern that other programmers will be writing code that intricately depends on those internal decisions.
 
-it means programmers wont have to worried about that someone will change the private properties of that class in future
+It means programmers won't have to worried about that someone will change the private properties of that class in future
 
-so that it become unsuable.
+So that it becomes unusable.
+
 
 
 *******************************************************
