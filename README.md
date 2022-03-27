@@ -1854,6 +1854,7 @@ Method Resolution Order (MRO) is the order in which Python looks for a method in
 It plays a vital role in the context of multiple inheritance as a single method may be found in multiple super classes.
 
 **Tip 2**
+
 **super() method**
 
 We have already seen a use case of super() method. We have used this to inherit the constructor from the parent class.
@@ -1886,6 +1887,7 @@ In programming, this is called "Method Overriding" similar to the operator overl
 
 **Tip 3**
 
+
 **operator overloading**
 
 We see how different operators work in python. They are nothing but dunder methods.
@@ -1914,7 +1916,7 @@ print(num1+num2)
 ```
 here we have changed what our + operator actually does.
 
-**tip 4**
+**Tip 4**
 
 **object life cycle**
 
@@ -1975,6 +1977,7 @@ When a reference count becomes 0. It is no longer of any use for us. So, python 
 that is what "garbage collection is"
 
 **Tip 5**
+
 
 **data hiding**
 
