@@ -1198,11 +1198,11 @@ class Child8(Child6,Child7):
 
 **special/magic/dunder methods**
 
-there are some methods in python we can use within our classes.
+There are some methods in python we can use within our classes.
 
-this methods called special methods or magic methods or dunder methods.
+These methods are called special methods or magic methods or dunder methods.
 
-this special methods allow us to emulate some built_in behaviour within python and its also how we implement operator overloading.
+These special methods allow us to emulate some built_in behaviour within python and it's also how we implement operator overloading.
 
 ```Python
 class Employee:
@@ -1238,17 +1238,17 @@ if we print emp_1 , we find some message.
 print(emp_1) 
 
 ```
-it is nice if we change its behaviour and print out something like user-friendly .
+it is nice if we change its behaviour and print out something user-friendly .
 
-these special methods are going to allow us to do that.
+These special methods are going to allow us to do that.
 
-special method are always sorrunded by double underscore(_)
+special method are always surrounded by double underscore(_)
 
-so for that reason, it also called dunder.
+So for that reason, it is also called dunder.
 
-so dunder init means __init__
+so dunder init means `__init__`
 
-so lets look some other common special methods.
+Let's look at some other common special methods.
 
 ```Python
 class Employee2:
@@ -1296,13 +1296,13 @@ emp_4=Employee2("cristiano","ronaldo",20000)
 print(emp_3)
 
 ```
-now it returned a string that we specified in the __repr__ method.
+Now it returns a string that we specified in the `__repr__` method.
 
 so if we wanted to recreate this we can just copy our output.
 
-and its the exact same thing that we used to make our object.
+And it's the exact same thing that we used to make our object.
 
-but when we make our __str__ method then it will access our str special method.
+but when we make our `__str__` method then it will access our str special method.
 
 it is a readable display for end_users.
 
@@ -1314,7 +1314,7 @@ print(repr(emp_3))
 print(str(emp_3))
 
 ```
-so whats going on the background is that its directly calling  those special methods.
+So what's going on in the background is that it's directly calling  those special methods.
 
 ```Python
 print(emp_3.__repr__())
@@ -1322,25 +1322,25 @@ print(emp_3.__repr__())
 print(emp_3.__str__())
 
 ```
-its is actually the same thing.
+It is actually the same thing.
 
-so this to special methods allow us to how our object will be printed and displayed.
+So these special methods allow us to know how our object will be printed and displayed.
 
-so print(emp_3) first execute dunder str.
+so print(emp_3) first executed dunder str.
 
-if there is no dunder str it will run dunder repr.
+If there is no dunder str it will run dunder repr.
 
-if there is no dunder repr it will then run that ugly message.
+If there is no dunder repr it will then run that ugly message.
 
-so its a good habit thet if we create dunder str, we should create dunder repr in our class too.
+So it's a good habit that if we create dunder str, we should create dunder repr in our class too.
 
-there are also many magic methods in arithmatic.
+There are also many magic methods in arithmetic.
 
 ```Python
 print(1+2)
 
 ```
-when we run this code, it will run a dunder add in background.
+when we run this code, it will run a dunder add in the background.
 
 ```Python
 print(int.__add__(1,2))# here int is a default object.
@@ -1356,19 +1356,19 @@ print(str.__add__("a","b"))
 ```
 we can also add the salaries of our employees by dunder add.
 
-remember that though this methods are available for our code, but thats not available for our class by default.
+remember that though these methods are available for our code, but that's not available for our class by default.
 
 so in order to make them available for our class and objects we need to do some additional coding.
 
-if we do not do so our code will give us error.
+if we do not do so our code will give us errors.
 
 ```Python
 print(emp_3+emp_4)# to add this we need to use + instead of "," 
 
 ```
-there also many dunder methods.
+There are also many dunder methods.
 
-we can find them in this description "https://docs.python.org/3/references/datamodel.html#special-method-names"
+You can find them in this description "https://docs.python.org/3/references/datamodel.html#special-method-names"
 
 infact, "len" is a dunder method too.
 
@@ -1384,83 +1384,83 @@ we can apply this to our class.
 print(len(emp_3))
 
 ```
-it is useful when someone writing a document and needs too know how many characters the employees name will take up.
+It is useful when someone is writing a document and needs to know how many characters the employee's name will take up.
 
-so we see that in python all operation have a top level function like len or add.
+so we see that in python all operations have a top level function like len or add.
 
 and the top level functions are surrounded by __ which allows us to implement those top level functions.
 
-lets see some other magic methods.
+Let's see some other magic methods.
 
-__len__         len()
+`__len__ `        len()
 
-__add__         +
+`__add__ `        +
 
-__sub__         -
+`__sub__ `        -
 
-__mul__         -
+`__mul__ `        -
 
-__truediv__     /
+`__truediv__`     /
 
-__floordiv__    //
+`__floordiv__`    //
 
-__mod__         %
+`__mod__  `       %
 
-__pow__         **
+`__pow__ `        **
 
-__and__         &
+`__and__ `        &
 
-__xor__         ^
+`__xor__ `        ^
 
-__import__      |
+`__import__`      |
 
-__lt__          <
+`__lt__ `         <
 
-__le__          <=
+`__le__ `         <=
 
-__eq__          ==
+`__eq__  `        ==
 
-__ne__          !=
+`__ne__ `         !=
 
-__gt__          >
+`__gt__ `         >
 
-__ge__          >=
+`__ge__`          >=
 
-__getitem__
+`__getitem__`
 
-__setitem__
+`__setitem__`
 
-__delitem__
+`__delitem__`
 
-__iter__
+`__iter__`
 
-__next__
+`__next__`
 
-__name__
+`__name__`
 
-__main__
+`__main__`
 
-__contains__
+`__contains__`
 
-__call__        x()
+`__call__ `       x()
 
-__doc__
+`__doc__`
 
-__iadd__        +=
+`__iadd__   `     +=
 
-__isub__        -=
+`__isub__  `      -=
 
-__imul__        *=
+`__imul__ `       *=
 
-__idiv__        /=
+`__idiv__ `       /=
 
-__imod__        %=
+`__imod__ `       %=
 
 we have lots and lots more dunder methods in python. we have said earliar and saying again go to that link.
 
 "https://docs.python.org/3/references/datamodel.html#special-method-names"
 
-or we can goolge it.
+or we can google it.
 
 
 *******************************************************
