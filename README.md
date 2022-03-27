@@ -2089,27 +2089,27 @@ So that it becomes unusable.
 
 *******************************************************
 *******************************************************
-polymorphism
 
-it is one of the main principle of oop programming.
+[oop10](https://github.com/MINIMALaq/Object-Oriented-Programming-in-Python/blob/master/oop10%20(polymorphism%20in%20python).py)
+**polymorphism**
 
-sometimes a object comes in many types and forms.
+It is one of the main principles of oop programming.
 
-so we can create a method, that will access all types of that object 
+Sometimes an object comes in many types and forms.
 
-and do the same thing regardless what type of the object it is.
+So we can create a method that will access all types of that object and do the same thing regardless what type of the object it is.
 
-the idea is called polymorphism.
+The idea is called polymorphism.
 
-it means there will be one function but it can behave various ways depending on the type of the input.
+It means there will be one function but it can behave various ways depending on the type of the input.
 
 polymorphism can be achieved by overriding and overloading in python.
 
-method overriding:
+**method overriding:**
 
-it means having two method with the same name but doing different tasks.
+It means having two methods with the same name but doing different tasks.
 
-it means one of the methods override the other.
+it means one of the methods overrides the other.
 
 if there is any method in the parent class and a method with the same name in the child class,
 
@@ -2149,15 +2149,15 @@ print(object_H.name)
 object_H.num()
 
 ```
-here we are using the same method and variable for 2 different class 
+Here we are using the same method and variable for 2 different class 
 
 and they are handling each class separately which is polymorphism
 
-overloading
+**overloading**
 
-in python we can define a method in such a way that there are multiple ways to call it.
+In python we can define a method in such a way that there are multiple ways to call it.
 
-if we are given a single method or function, we can specify the number of parameters our self.
+if we are given a single method or function, we can specify the number of parameters ourselves.
 
 ```Python
 class Human:
@@ -2201,19 +2201,19 @@ obj_2=Human()
 obj_2.hello("FRANCE")
 
 ```
-here hello is the same method but it will work differently depending on the arguements.
+Here hello is the same method but it will work differently depending on the arguments.
 
-we can do polymorphism with this overloading too.
+We can do polymorphism with this overloading too.
 
-there is another type of overloading which is operator overloading.
+There is another type of overloading which is operator overloading.
 
 add(+) operator is the same operator but works differently for different types of input.
 
-it sum the value of int and float objects
+it sum the value of int and float objects,
 
-and it concate string objects
+It concat string objects,
 
-it extend list objects.
+It extends list objects.
 
 we can also create our own class and change the functionality of the add(+) operator.
 
@@ -2243,8 +2243,7 @@ print("Good "+"Boy")
 ```
 here + is the same operator but it returns different values for different types of objects.
 
-so it is a example of operator overloading.
-
+so it is an example of operator overloading.
 
 *******************************************************
 *******************************************************
