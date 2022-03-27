@@ -2091,6 +2091,7 @@ So that it becomes unusable.
 *******************************************************
 
 [oop10](https://github.com/MINIMALaq/Object-Oriented-Programming-in-Python/blob/master/oop10%20(polymorphism%20in%20python).py)
+
 **polymorphism**
 
 It is one of the main principles of oop programming.
@@ -2247,25 +2248,25 @@ so it is an example of operator overloading.
 
 *******************************************************
 *******************************************************
-abstraction in python
+[oop11](https://github.com/MINIMALaq/Object-Oriented-Programming-in-Python/blob/master/oop11%20(abstraction%20in%20python).py) **Abstraction in python**
 
-it is one of the main principles in oop
+It is one of the main principles in oop.
 
 DEFINITION:
 
-abstraction is the act of removing elements of specificity to emphasize commonality.
+Abstraction is the act of removing elements of specificity to emphasize commonality.
 
-it is the process of describing things using only the important details for the task at hand.
+It is the process of describing things using only the important details for the task at hand.
 
-in computer context, this involvs only providing attributes and methods to an object
+in computer context, this involves only providing attributes and methods to an object
 
-that are useful for that perticular task only.
+that are useful for that particular task only.
 
-Abstract Class
+**Abstract Class**
 
-abstract classes are the classes that contains abstract methods.
+Abstract classes are the classes that contain abstract methods.
 
-an abstract method is a method that is declared, but contains no implementation.
+An abstract method is a method that is declared, but contains no implementation.
 
 abstract classes cannot be instantiated it means we cannot create objects of the abstract class. 
 
@@ -2273,11 +2274,11 @@ and requires subclasses to provide implementations for the abstract methods (we 
 
 Subclasses of an abstract class in python are not required to implement abstract methods of the parent class.
 
-we want to make an abstract class.
+We want to make an abstract class.
 
-in python there is a pre-defined abstract class called ABC(abstract base class).
+In python there is a predefined abstract class called ABC(abstract base class).
 
-we have to import ABC class from abc module.
+We have to import the ABC class from the abc module.
 
 ```Python
 from abc import ABC, abstractmethod
@@ -2316,10 +2317,10 @@ class Mechanic(Configure):
 
         super().display()
 
-        # generally we dont have any implementation in abstract methods. but if we have any then we can use that.
+        # generally we don't have any implementation in abstract methods. but if we have any then we can use that.
 
 ```
-we have to create object of the child class.
+We have to create an object for the child class.
 
 ```Python
 m=Mechanic()
@@ -2327,7 +2328,7 @@ m=Mechanic()
 m.display()
 
 ```
-what if we have two different abstract methods in the parent calss and only one overridden abstract method in the child class?
+What if we have two different abstract methods in the parent class and only one overridden abstract method in the child class?
 
 ```Python
 class Configure2(ABC):
@@ -2355,25 +2356,21 @@ class Mechanic2(Configure2):
     #     pass
 
 ```
-here we have two abstract methods in parent class
+Here we have two abstract methods in the parent class and we only have implemented one of the methods in the subclass.
 
-and we only have implemented one of the methods in the subclass.
-
-now can we create an object for the subclass?
+Now can we create an object for the subclass?
 
 m2=Mechanic2()
 
 m2.engine()
 
-we can see that we cant do it because there is another abstract method remaining 
+We see that we can't do it because there is another abstract method remaining which our subclass inherits from the parent class and we haven't implemented that.
 
-which our subclass inherit from the parent class and we havent implement that.
+So our Mechanic2() class is also a abstract class
 
-so our Mechanic2() class is also a abstract class
+How to solve this problem?
 
-how to solve this problem?
-
-there is several ways we can do this.
+There are several ways we can do this.
 
 method 1: we can implement the remaining function in the subclass.
 
@@ -2408,9 +2405,9 @@ class Cal(ABC):
 
         self.value=value
 
-        # NOTE: here value is a local variable for the __init__ constructure.
+        # NOTE: here value is a local variable for the __init__ constructor.
 
-        # when we use self.value it becomes class variable for the entire class.
+        # when we use self.value it becomes a class variable for the entire class.
 
     @abstractmethod
 
@@ -2445,13 +2442,13 @@ print(obj.add())
 print(obj.sub())
 
 ```
-Why should we use abstract class?
+Why should we use an abstract class?
 
-we should use abstraction when we are designing an application in a oop way.
+We should use abstraction when we are designing an application in an oop way.
 
-if we create an abstract class, the subclasses will have some restrictions to which method they musst have to defined.
+If we create an abstract class, the subclasses will have some restrictions to which method they must have to define.
 
-for example, in the previous example our Mechanic2 class must have 2 methods which are color() and engine()
+For example, in the previous example our Mechanic2 class must have 2 methods which are color() and engine().for example, in the previous example our Mechanic2 class must have 2 methods which are color() and engine()
 
 
 *******************************************************
