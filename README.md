@@ -1726,7 +1726,7 @@ So the attribute becomes an read_only attribute.
 
 *******************************************************
 *******************************************************
-[oop_extra 8](https://github.com/MINIMALaq/Object-Oriented-Programming-in-Python/blob/master/oop08%20(combining%20multiple%20classes).py)
+[oop8](https://github.com/MINIMALaq/Object-Oriented-Programming-in-Python/blob/master/oop08%20(combining%20multiple%20classes).py)
 
 **combining multiple classes and objects**
 
@@ -1795,6 +1795,8 @@ print(p2.robotOwened.introduce_self())
 *******************************************************
 *******************************************************
 [oop9](https://github.com/MINIMALaq/Object-Oriented-Programming-in-Python/blob/master/oop09%20(5%20important%20tips%20and%20tricks%20for%20oop).py)
+
+
 **Tip 1**
 
 multiple inheritance
